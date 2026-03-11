@@ -1,71 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vandan Patel | Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(65, 27, 6, 1) 100%);
-            /* #6B4F4F; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: -100px;
-            border: 1px solid #594036;
-        }
-        .social-icons {
-            margin-top: 15px;
-        }
-        .social-icons a {
-            margin: 0 20px;
-            color: gray;
-            font-size: 25px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: black;
-        }
-        h2, p {
-            color: #404040;
-            text-transform: uppercase;
-            font-family: Aladin, cursive;
-        }
-        h2 {font-size: 2.25rem;}
-        p {font-weight: 600;}
-    </style>
+    <title>Vandan Patel | Senior Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <img src="vandan.jpg" alt="Profile Picture" class="profile-pic">
-        <h2>Vandan Patel</h2>
-        <hr>
-        <p>Full Stack Developer</p>
-        <p style="margin-bottom: 30px;">Ahmedabad, Gujarat, India</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/vandan-patel-3b794811b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Vandanptl" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://x.com/vandanpatel_29" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/vandan_ptl/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <header class="header">
+        <nav class="nav max-width">
+            <div class="logo">
+                <span class="logo-box">VP</span>
+                <span class="logo-text">VANDAN.DEV</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-width">
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <span class="badge">Senior Software Engineer</span>
+                <h1>Vandan <span class="accent">Patel</span></h1>
+                <p class="hero-desc">
+                    Results-driven engineer with <strong>7+ years of experience</strong> in Healthcare and Time Tracking. 
+                    Adept at building high-performance applications with <strong>ASP.NET Core</strong> and <strong>React</strong>.
+                </p>
+                <div class="cta-group">
+                    <a href="mailto:vandan.ptl.dev@gmail.com" class="btn btn-primary">Contact Me</a>
+                    <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="vandan_ai.png" alt="Vandan Patel" referrerPolicy="no-referrer">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <div class="tags">
+                        <span>C#</span><span>JavaScript</span><span>SQL</span><span>HTML</span><span>CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Technologies</h3>
+                    <div class="tags">
+                        <span>ASP.NET Core</span><span>React.js</span><span>Web API</span><span>Angular</span><span>MVC</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Cloud & Tools</h3>
+                    <div class="tags">
+                        <span>Azure</span><span>AWS</span><span>Jenkins</span><span>Git</span><span>Postman</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="date">2020 — Present</span>
+                        <span class="company">EK Software PVT. LTD.</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer</h3>
+                        <ul>
+                            <li>Developed scalable ASP.NET Core Web APIs for healthcare.</li>
+                            <li>Integrated React.js UI components for seamless interactions.</li>
+                            <li>Optimized database structures and stored procedures.</li>
+                            <li>Implemented JWT authentication and ASP.NET Core Identity.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="date">2019 — 2020</span>
+                        <span class="company">Anoopam Mission</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Freelance Developer</h3>
+                        <ul>
+                            <li>Developed a WordPress website with custom fields.</li>
+                            <li>Created custom UI aligned with branding standards.</li>
+                            <li>Maintained website for performance and security.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="max-width">
+            <p>© 2026 Vandan Patel. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
+
+    <button id="go-top" class="go-top-btn" aria-label="Go to top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
